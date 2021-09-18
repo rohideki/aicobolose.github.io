@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aico Bolos e Doces</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
+<script type="text/javascript" src="javascript/index.js"></script>
+
 <body>
     <h1>Aico</h1>
     <h2>Bolos e Doces</h2>
     <p>O melhor bolo da cidade de Campo Grande</p>
     <img src="css/img/13327430_523874591134760_2687207583116172224_n.jpg"></img>
     <p><a href="cardapio.html">Cardapio</a></p>
-    
+   
+    <action="button" method="post">
+        <form><h4>Faça seu Cadastro para receber novidades!</h4>
+        <br>Nome</br><input type="text" name="nome" id="nome">
+        
+        <br>Email</br><input type="email" name="email" id="email">
+        <br>CPF</br><input type="text" name="cpf" id="cpf">
+        <br>Telefone</br><input type="tel" name="tel" id="tel">
+        <br>Endereco</br><input type="text" name="endereco" id="endereco">
+        <br>Numero</br><input type="number" name="numero" id="numero">
+        <br>Complemento</br><input type="text" name="complemento" id="complemento">
+        <br>Bairro</br><input type="text" name="bairro" id="bairro">
+        <br>Cidade</br><input type="text" name="cidade" id="cidade">
+        <br>Estado</br><input type="text" name="estado" id="estado">
+        <br>CEP</br><input type="text" name="cep" id="cep">
+        <br></br><input type="submit" class="enviar" onclick="enviarCadastro()" value="enviar">
+    </form>
+    <action="button" method="post">
+    <form>
+        <h3>Qual(is) seu(s) doce(s) preferido(s)?</h3>
+        <input type="checkbox" name="Bolo de pote" id="boloPote">
+        <label for="boloPote">Bolo de Pote</label>
+        <input type="checkbox" name="Pao de Mel" id="paoMel">
+        <label for="paoMel">Pão de Mel</label>
+        <input type="checkbox" name="Brigadeiro" id="brigadeiro">
+        <label for="brigadeiro">Brigadeiro</label>
+        <input type="checkbox" name="Beijinho Crocante" id="beijinhoCrocante">
+        <label for="beijinhoCrocante">Beijinho Crocante</label>
+        <input type="checkbox" name="Bolo Gelado" id="boloGelado">
+        <label for="boloGelado">Bolo Gelado</label>
+        <input type="submit" class="Opinar" onclick="opinar()" value="Opinar">
+    </form>
+    </action>
 </body>
 </html>
